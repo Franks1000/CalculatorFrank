@@ -34,8 +34,8 @@ jobs:
         context: .
         push: true
         tags: |
-          your-dockerhub-franks10/your-image-name:latest
-          your-dockerhub-franks10/your-image-name:${{ matrix.go-version }}
+          your-dockerhub-username/your-image-name:latest
+          your-dockerhub-username/your-image-name:${{ matrix.go-version }}
       env:
-        DOCKER_USERNAME: ${{ secrets.DOCKERHUB_franks10 }}
+        DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_dckr_pat_ShJkbnWpD4VmcmWbq04iGZBsGl4 }}
